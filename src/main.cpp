@@ -418,6 +418,15 @@ int main()
     {
         sf::Event event;
 
+        // if (event.type == sf::Event::Resized)       // popracowac nad tym: zczytywac rozmiar okna i skalowac
+        // {
+        //     board.setView(sf::View(sf::FloatRect(0, 0, event.size.width, event.size.height)));
+        //     sf::RenderWindow board(sf::VideoMode(event.size.width, event.size.height), "Tic tac toe");
+        //     std::cout << "\n" << board.getSize().x << std::endl;
+        //     board.clear(sf::Color::White);
+        //     draw_board(board, number_of_cells);
+        //     board.display();
+        // }
 
         while (board.pollEvent(event))
         {
